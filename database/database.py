@@ -3,11 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 from urllib.parse import quote_plus
 
-username="postgres"
-password=quote_plus("IB@123")
-ip_address="localhost"
-port=5432
-database="service_desk"
+
 # use this for local
 db_string = f"postgresql://{username}:{password}@{ip_address}:{port}/{database}"
 
